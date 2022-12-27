@@ -1,0 +1,41 @@
+{
+  "name": "kdux-router-sync",
+  "version": "5.0.0",
+  "description": "Effortlessly keep kdu-router and kdux store in sync.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "types/*.d.ts"
+  ],
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "buble src/index.js > index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdujs/kdux-router-sync.git"
+  },
+  "keywords": [
+    "kdux",
+    "kdu-router",
+    "kdu"
+  ],
+  "author": "NKDuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdujs/kdux-router-sync/issues"
+  },
+  "homepage": "https://github.com/kdujs/kdux-router-sync#readme",
+  "devDependencies": {
+    "buble": "^0.16.0",
+    "kdu": "2.5.0",
+    "kdu-router": "^3.0.0",
+    "kdux": "^3.0.0",
+    "typescript": "^2.5.3"
+  },
+  "peerDependencies": {
+    "kdu-router": "^3.0.0",
+    "kdux": "^3.0.0"
+  }
+}
